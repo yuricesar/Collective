@@ -2,60 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-68a84b5b64b08cff579a27d6edba60a20542a0ac.jar" />
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-2c4b54510cd4cac883d09b46c3385b867eba828c.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\Collective\library\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-a44cf4e7b45cba288627bff906b95bacaa693345.jar" />
+        sha1="a51373a3eef6c1520106f71a59a8e01e65f220c0">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-7704f7e47f8f138eb7fe740583a65873a6581890.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-62293c118c0da52664b6a73be52eaab8b2c4a44c.jar" />
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-9ccf621493cb83dffc02986a4cb32115c2edf4f2.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-9bdb8ebc921187e4958a0e98025313b220f04847.jar" />
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-e7022f5fea440fd5accd583e5448a2be20b69c1f.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-6328dd7d845d5af7499deeb1f2c9e69829b98fb7.jar" />
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-1b25c7e75c0d4d9defeda3b75609984e720c9cbd.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\5.1.2\daf5472b0df6dabaceb6ad755b3812535863965a\butterknife-5.1.2.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="daf5472b0df6dabaceb6ad755b3812535863965a">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\butterknife-5.1.2-22d991c38e64c104d03af0fb2c7d9cd5c7ec351c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-51f40f3e96505f7e9c185e7c4445691eb5f3a367.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-af8b8fe1b3cbee44d5fd0904d6797ad590272f01.jar" />
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-a1262885239d993c69251f0df33207ca78f8c5b7.jar" />
     </item>
     <item
         jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
@@ -65,39 +51,46 @@
         <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-3547aff675b93a1559f904daedd4cbc9322fcf2a.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-a71ea1fa4ee39e7f30ccba7a1d87c991ac911e4d.jar" />
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-af8b8fe1b3cbee44d5fd0904d6797ad590272f01.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jar="C:\Users\Yuri\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\5.1.2\daf5472b0df6dabaceb6ad755b3812535863965a\butterknife-5.1.2.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-714f6170d5b1bddeabbc08b9e219465a38615012.jar" />
+        sha1="daf5472b0df6dabaceb6ad755b3812535863965a">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\butterknife-5.1.2-22d991c38e64c104d03af0fb2c7d9cd5c7ec351c.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-35618dc36cd9ee28a1aca02f12344659ccc32e48.jar" />
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-6328dd7d845d5af7499deeb1f2c9e69829b98fb7.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\gson-2.3.1-24a4cec7e629448c36065cf8f90dd2e6320ef762.jar" />
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-62293c118c0da52664b6a73be52eaab8b2c4a44c.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-9ccf621493cb83dffc02986a4cb32115c2edf4f2.jar" />
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-68a84b5b64b08cff579a27d6edba60a20542a0ac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-9bdb8ebc921187e4958a0e98025313b220f04847.jar" />
     </item>
     <item
         jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
@@ -121,62 +114,6 @@
         <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-18228bd570a24cc1e0abbfced4f305723a73e6ac.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\Collective\library\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="92db01e4fb71345592f6d9855d0d5a6e85b42e4d">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-7704f7e47f8f138eb7fe740583a65873a6581890.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-90a5dcc36c0ca1593e84c90f29be62d1b480f950.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-a4457a36d932ff175d5af81795365bd684bc81a1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-9dd78b1da2e84497dc727004226ed21b97cb7676.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-a1262885239d993c69251f0df33207ca78f8c5b7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-e7022f5fea440fd5accd583e5448a2be20b69c1f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d405025c600055237c171a0bbabaa49d69696573">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-4452e069819ffe2b09d9e807f40ba01f28875e23.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-2c4b54510cd4cac883d09b46c3385b867eba828c.jar" />
-    </item>
-    <item
         jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -184,25 +121,11 @@
         <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-85d1dd8f723e2f6d528e042cb0ae2d761113e8a0.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-1b25c7e75c0d4d9defeda3b75609984e720c9cbd.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-b85cd611c05dd7526f9302198e1cf23e07abc5b8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-4b8f32a90fefa5f4740c41ed31aff9c744edcaa7.jar" />
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-714f6170d5b1bddeabbc08b9e219465a38615012.jar" />
     </item>
     <item
         jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
@@ -212,11 +135,81 @@
         <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-f06b6c1e4d451b6f7e50974893856819b7c6b7d5.jar" />
     </item>
     <item
-        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
-        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-f3183adb39a41519bfef9bef0f7029f1bc0a3c96.jar" />
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-51f40f3e96505f7e9c185e7c4445691eb5f3a367.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\gson-2.3.1-24a4cec7e629448c36065cf8f90dd2e6320ef762.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-35618dc36cd9ee28a1aca02f12344659ccc32e48.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-a71ea1fa4ee39e7f30ccba7a1d87c991ac911e4d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-4452e069819ffe2b09d9e807f40ba01f28875e23.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\Collective\floatingbutton\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02b4a02b498c4c7b3ea382618fbc6f3766b05f3c">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-e2e39da1ea39cbec1d7b78bcafea612b691c2938.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-4b8f32a90fefa5f4740c41ed31aff9c744edcaa7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-a4457a36d932ff175d5af81795365bd684bc81a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-a44cf4e7b45cba288627bff906b95bacaa693345.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-b85cd611c05dd7526f9302198e1cf23e07abc5b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-9dd78b1da2e84497dc727004226ed21b97cb7676.jar" />
     </item>
     <item
         jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
@@ -226,11 +219,25 @@
         <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-b25c46c2e74df089a64ce869e2d54d537c62c231.jar" />
     </item>
     <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-90a5dcc36c0ca1593e84c90f29be62d1b480f950.jar" />
+    </item>
+    <item
         jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
         <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-33d40b12acb959bb9fc6f09575664fbd71171b0d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="C:\Users\Yuri\AndroidStudioProjects\Collective\app\build\intermediates\pre-dexed\debug\classes-f3183adb39a41519bfef9bef0f7029f1bc0a3c96.jar" />
     </item>
 
 </items>
