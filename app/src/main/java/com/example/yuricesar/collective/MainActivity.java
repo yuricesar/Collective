@@ -8,6 +8,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.AsyncTask;
@@ -76,11 +79,11 @@ public class MainActivity extends ActionBarActivity
 
         Bundle extras = getIntent().getExtras();
         String id = (String) extras.get("ID");
-        String nome = (String)extras.get("Nome");
-        String picture = (String)extras.get("Picture");
+        final String nome = (String)extras.get("Nome");
+        final String picture = (String)extras.get("Picture");
         String email = (String)extras.get("Email");
 
-            //user = DataBaseHelper.getInstance(this).getUser(id);
+        //user = DataBaseHelper.getInstance(this).getUser(id);
 
         // populate the navigation drawer
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -91,6 +94,11 @@ public class MainActivity extends ActionBarActivity
 
         callConecton();
         initLocationRequest();
+
+        //receber msgs
+        Intent it = new Intent("SERVICE_MSG");
+        it.putExtra("id", id);
+        startService(it);
 
         //RECOMENDAÇÃO
         al = new ArrayList<>();
@@ -146,8 +154,20 @@ public class MainActivity extends ActionBarActivity
         flingContainer.setOnItemClickListener(new SwipeFlingAdapterView.OnItemClickListener() {
             @Override
             public void onItemClicked(int itemPosition, Object dataObject) {
-                makeToast(MainActivity.this, "Clicado!");
+                Intent it = new Intent();
+                it.setClass(MainActivity.this, ProfileActivity.class);
+                try {
+                    it.putExtra("nameUser", arrayAdapter.getItem(0));
+                    //TODO passar o cálculo da afinidade
+                    it.putExtra("affinityLevel", 75);
+                    startActivity(it);
+                }catch(Exception e) {
+                    makeToast(MainActivity.this, e.getMessage());
+                }
+
             }
+
+
         });
     }
 
@@ -166,114 +186,6 @@ public class MainActivity extends ActionBarActivity
     @OnClick(R.id.left)
     public void left() {
         flingContainer.getTopCardListener().selectLeft();
-    }
-
-    //TODO fazer isso sempre estar executando
-    private void acharPessoasProximas() {
-        UserInfo u = null;
-        try {
-            u = (UserInfo) celulaREST.userProximos(user).get(0);
-            while (u != null) {
-                notifyPeopleAround(u.getName(), media((List<Object>) celulaREST.userProximos(user).get(1)));
-                u = (UserInfo) celulaREST.userProximos(user).get(0);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private double media (List<Object> list) {
-        double soma = 0;
-        for (int i = 0; i < list.size(); i++) {
-            soma += (Double) list.get(i);
-        }
-        return soma/list.size();
-    }
-
-    private void notifyPeopleAround(String name, double interestesLevel) {
-        NotificationCompat.Builder mBuilder =
-                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.notification_template_icon_bg) //TODO colocar o icon do collective
-                        .setContentTitle("Pessoa próxima de você : "+name)
-                        .setContentText("Nível de coisas em comum : "+interestesLevel+"%");
-        mBuilder.setProgress(100, Integer.parseInt(String.valueOf(interestesLevel)) , false);
-        // Creates an explicit intent for an Activity in your app
-        Intent resultIntent = new Intent(this, LoginActivity.class);
-
-        // The stack builder object will contain an artificial back stack for the
-        // started Activity.
-        // This ensures that navigating backward from the Activity leads out of
-        // your application to the Home screen.
-        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-        // Adds the back stack for the Intent (but not the Intent itself)
-        stackBuilder.addParentStack(LoginActivity.class);
-        // Adds the Intent that starts the Activity to the top of the stack
-        stackBuilder.addNextIntent(resultIntent);
-        PendingIntent resultPendingIntent =
-                stackBuilder.getPendingIntent(
-                        0,
-                        PendingIntent.FLAG_UPDATE_CURRENT
-                );
-        mBuilder.setContentIntent(resultPendingIntent);
-        NotificationManager mNotificationManager =
-                (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
-        // mId allows you to update the notification later on.
-        mNotificationManager.notify(001, mBuilder.build());
-    }
-
-    //TODO fazer isso sempre estar executando
-    private void receberMsg() {
-        try {
-            List<String> result = celulaREST.receberMsg(user);
-            String msg = result.get(1);
-            if (!msg.equals("")) {
-                notifyMessages();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        receberMsg();
-    }
-
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-    private void notifyMessages() {
-        NotificationCompat.Builder mBuilder =
-                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.notification_template_icon_bg) //TODO colocar o icon do collective
-                        .setContentTitle("Mensagens não lidas")
-                        .setContentText("clique aqui");
-        // Creates an explicit intent for an Activity in your app
-        Intent resultIntent = new Intent(this, LoginActivity.class);
-
-        // The stack builder object will contain an artificial back stack for the
-        // started Activity.
-        // This ensures that navigating backward from the Activity leads out of
-        // your application to the Home screen.
-        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-        // Adds the back stack for the Intent (but not the Intent itself)
-        stackBuilder.addParentStack(LoginActivity.class);
-        // Adds the Intent that starts the Activity to the top of the stack
-        stackBuilder.addNextIntent(resultIntent);
-        PendingIntent resultPendingIntent =
-                stackBuilder.getPendingIntent(
-                        0,
-                        PendingIntent.FLAG_UPDATE_CURRENT
-                );
-        mBuilder.setContentIntent(resultPendingIntent);
-        NotificationManager mNotificationManager =
-                (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
-
-        //TODO naum testado, naum sei se precisa de um loop
-        int notifyID = 1;
-        int numMessages = 0;
-        mBuilder.setContentText(numMessages + "mensagens não lidas")
-                .setNumber(++numMessages);
-        mNotificationManager.notify(
-                notifyID,
-                mBuilder.build());
-
-        // mId allows you to update the notification later on.
-        mNotificationManager.notify(001, mBuilder.build());
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.example.yuricesar.collective.data;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class UserInfo{
 
@@ -9,11 +9,11 @@ public class UserInfo{
     private String email;
     private String picture;
 
-    private ArrayList<String> movies;
-    private ArrayList<String> books;
-    private ArrayList<String> games;
-    private ArrayList<String> music;
-    private ArrayList<String> tv;
+    private List<String> movies;
+    private List<String> books;
+    private List<String> games;
+    private List<String> music;
+    private List<String> tv;
 
     public UserInfo(String id, String name, String email, String picture){
         this.id = id;
@@ -42,35 +42,35 @@ public class UserInfo{
         return picture;
     }
 
-    public ArrayList<String> getMovies(){
+    public List<String> getMovies(){
         if (movies == null){
             return new ArrayList<String>();
         }
         return movies;
     }
 
-    public ArrayList<String> getBooks(){
+    public List<String> getBooks(){
         if (books == null){
             return new ArrayList<String>();
         }
         return books;
     }
 
-    public ArrayList<String> getGames(){
+    public List<String> getGames(){
         if (games == null){
             return new ArrayList<String>();
         }
         return games;
     }
 
-    public ArrayList<String> getMusic(){
+    public List<String> getMusic(){
         if (music == null){
             return new ArrayList<String>();
         }
         return music;
     }
 
-    public ArrayList<String> getTv(){
+    public List<String> getTv(){
         if (tv == null){
             return new ArrayList<String>();
         }
@@ -91,23 +91,23 @@ public class UserInfo{
         this.picture = picture;
     }
 
-    public void addUserMovies(ArrayList<String> movies){
+    public void addUserMovies(List<String> movies){
         this.movies = new ArrayList<String>(movies);
     }
 
-    public void addUserGames(ArrayList<String> games){
+    public void addUserGames(List<String> games){
         this.games = new ArrayList<String>(games);
     }
 
-    public void addUserBooks(ArrayList<String> books){
+    public void addUserBooks(List<String> books){
         this.books = new ArrayList<String>(books);
     }
 
-    public void addUserMusic(ArrayList<String> music){
+    public void addUserMusic(List<String> music){
         this.music = new ArrayList<String>(music);
     }
 
-    public void addUserTv(ArrayList<String> tv){
+    public void addUserTv(List<String> tv){
         this.tv = new ArrayList<String>(tv);
     }
 

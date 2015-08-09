@@ -209,26 +209,26 @@ public class LoginActivityFragment extends Fragment {
                             ArrayList<String> list = new ArrayList<String>();
                             JSONArray array = response.getJSONObject().getJSONArray("data");
                             int qtd = array.length();
-                                for (int i = 0; i < qtd; i++) {
-                                    list.add(array.getJSONObject(i).get("name").toString());
-                                }
-                                switch(category){
-                                    case "movies":
-                                        user.addUserMovies(list);
-                                        break;
-                                    case "books":
-                                        user.addUserBooks(list);
-                                        break;
-                                    case "games":
-                                        user.addUserGames(list);
-                                        break;
-                                    case "music":
-                                        user.addUserMusic(list);
-                                        break;
-                                    case "television":
-                                        user.addUserTv(list);
-                                        break;
-                                }
+                            for (int i = 0; i < qtd; i++) {
+                                list.add(array.getJSONObject(i).get("name").toString());
+                            }
+                            switch(category){
+                                case "movies":
+                                    user.addUserMovies(list);
+                                    break;
+                                case "books":
+                                    user.addUserBooks(list);
+                                    break;
+                                case "games":
+                                    user.addUserGames(list);
+                                    break;
+                                case "music":
+                                    user.addUserMusic(list);
+                                    break;
+                                case "television":
+                                    user.addUserTv(list);
+                                    break;
+                            }
                             Log.d("Interests", "add " + category);
                             Log.d("result", list.toString());
                         } catch (JSONException e) {
