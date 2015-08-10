@@ -42,7 +42,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE friendship( "
                 + "id TEXT PRIMARY KEY, "
-                + "id_user1 TEXT, id_user2 TEXT"
                 + "FOREIGN KEY(id_user1) REFERENCES user(id), "
                 + "FOREIGN KEY(id_user2) REFERENCES user(id)"
                 +

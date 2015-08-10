@@ -9,7 +9,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 /**
- * Created by Win 7 on 09/08/2015.
+ * Created by Felipe Araujo on 09/08/2015.
  */
 public class ProfileActivity extends ActionBarActivity {
 

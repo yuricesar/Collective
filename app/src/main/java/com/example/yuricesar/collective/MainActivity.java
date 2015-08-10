@@ -8,9 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.AsyncTask;
@@ -62,9 +59,9 @@ public class MainActivity extends ActionBarActivity
     private UserInfo user;
 
     //ATRIBUTOS RECOMENDAÇÃO
+    private UserInfo candidato;
     private ArrayList<String> al;
     private ArrayAdapter<String> arrayAdapter;
-    private int i;
 
     @InjectView(R.id.frame)
     SwipeFlingAdapterView flingContainer;
@@ -79,8 +76,8 @@ public class MainActivity extends ActionBarActivity
 
         Bundle extras = getIntent().getExtras();
         String id = (String) extras.get("ID");
-        final String nome = (String)extras.get("Nome");
-        final String picture = (String)extras.get("Picture");
+        String nome = (String)extras.get("Nome");
+        String picture = (String)extras.get("Picture");
         String email = (String)extras.get("Email");
 
         //user = DataBaseHelper.getInstance(this).getUser(id);
@@ -101,13 +98,22 @@ public class MainActivity extends ActionBarActivity
         startService(it);
 
         //RECOMENDAÇÃO
-        al = new ArrayList<>();
-        al.add("Felipe");
-        al.add("Diego");
-        al.add("Franklin");
-        al.add("Ygor");
-        al.add("Yuri");
+//        try {
+//            //TODO preferencias
+//            List<Object> result = celulaREST.recomendacao(user, new ArrayList<Category>());
+//            candidato = (UserInfo) result.get(0);
+//            List<Double> intereses = (List<Double>) result.get(1);
+//            List<Object> result1 = celulaREST.recomendacao(user, new ArrayList<Category>());
+//            UserInfo candidato1 = (UserInfo) result.get(0);
+//            List<Double> intereses1 = (List<Double>) result.get(1);
+//            al = new ArrayList<>();
+//            al.add(candidato.getName());
+//            al.add(candidato1.getName());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
+        al = new ArrayList<>();
         arrayAdapter = new ArrayAdapter<>(this, R.layout.item, R.id.user_name, al);
 
         flingContainer.setAdapter(arrayAdapter);
@@ -125,21 +131,28 @@ public class MainActivity extends ActionBarActivity
                 //Do something on the left!
                 //You also have access to the original object.
                 //If you want to use it just cast it (String) dataObject
-                makeToast(MainActivity.this, "Esquerda!");
+                makeToast(MainActivity.this, "Recusado!");
             }
 
             @Override
             public void onRightCardExit(Object dataObject) {
-                makeToast(MainActivity.this, "Direita!");
+                makeToast(MainActivity.this, "Aceito!");
             }
 
             @Override
             public void onAdapterAboutToEmpty(int itemsInAdapter) {
                 // Ask for more data here
-                al.add("LES ".concat(String.valueOf(i)));
-                arrayAdapter.notifyDataSetChanged();
+                try {
+                    //TODO preferencias
+//                    List<Object> result = celulaREST.recomendacao(user, new ArrayList<Category>());
+//                    candidato = (UserInfo) result.get(0);
+//                    List<Double> intereses = (List<Double>) result.get(1);
+//                    al.add(candidato.getName());
+                    arrayAdapter.notifyDataSetChanged();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 Log.d("LIST", "notified");
-                i++;
             }
 
             @Override
@@ -154,20 +167,9 @@ public class MainActivity extends ActionBarActivity
         flingContainer.setOnItemClickListener(new SwipeFlingAdapterView.OnItemClickListener() {
             @Override
             public void onItemClicked(int itemPosition, Object dataObject) {
-                Intent it = new Intent();
-                it.setClass(MainActivity.this, ProfileActivity.class);
-                try {
-                    it.putExtra("nameUser", arrayAdapter.getItem(0));
-                    //TODO passar o cálculo da afinidade
-                    it.putExtra("affinityLevel", 75);
-                    startActivity(it);
-                }catch(Exception e) {
-                    makeToast(MainActivity.this, e.getMessage());
-                }
-
+                //TODO abrir perfil
+                makeToast(MainActivity.this, "Clicado!");
             }
-
-
         });
     }
 
@@ -177,9 +179,11 @@ public class MainActivity extends ActionBarActivity
 
     @OnClick(R.id.right)
     public void right() {
-        /**
-         * Trigger the right event manually.
-         */
+//        try {
+//            celulaREST.novaAmizade(user,candidato);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         flingContainer.getTopCardListener().selectRight();
     }
 
@@ -242,11 +246,11 @@ public class MainActivity extends ActionBarActivity
         Log.i("LOG", "onConnected(" + bundle + ")");
         Location l = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
         if(l != null) {
-            try {
-                celulaREST.atualizaLocalizacao(user.getId(), l.getLatitude(), l.getLongitude());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+//            try {
+//                celulaREST.atualizaLocalizacao(user.getId(), l.getLatitude(), l.getLongitude());
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
             Log.i("LOG", "Latitude: " + l.getLatitude());
             Log.i("LOG", "Longitude: " + l.getLongitude());
         }
@@ -260,11 +264,11 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onLocationChanged(Location location) {
 
-        try {
-            celulaREST.atualizaLocalizacao(user.getId(), location.getLatitude(), location.getLongitude());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            celulaREST.atualizaLocalizacao(user.getId(), location.getLatitude(), location.getLongitude());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
