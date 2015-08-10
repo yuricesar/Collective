@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.yuricesar.collective.data.BD;
 import com.example.yuricesar.collective.data.CelulaREST;
 import com.example.yuricesar.collective.data.DataBaseHelper;
 import com.example.yuricesar.collective.data.UserInfo;
@@ -46,6 +47,8 @@ public class LoginActivityFragment extends Fragment {
 
     private Intent it;
 
+    private BD bd;
+
     private FacebookCallback<LoginResult> callback = new FacebookCallback<LoginResult>() {
         @Override
         public void onSuccess(LoginResult loginResult) {
@@ -74,6 +77,8 @@ public class LoginActivityFragment extends Fragment {
                                 getUserInterest(profile, "music", user);
                                 getUserInterest(profile, "television", user);
 
+                                criarUser();
+
                                 Intent it = new Intent();
                                 it.setClass(getActivity(), MainActivity.class);
                                 it.putExtra("ID", user.getId());
@@ -98,19 +103,20 @@ public class LoginActivityFragment extends Fragment {
             request.setParameters(parameters);
             request.executeAsync();
 
-//            criarUser();
+
         }
 
-//        private void criarUser() {
-//            if (!DataBaseHelper.getInstance(getActivity()).costainsUser(user.getId())) {
-//                DataBaseHelper.getInstance(getActivity()).insertUser(user);
-//                try {
-//                    new CelulaREST().novoUsuario(user);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
+     private void criarUser() {
+        if (!bd.containsUser(user.getId())) {
+            bd.insertUser(user);
+
+             try {
+                new CelulaREST().novoUsuario(user);
+             } catch (Exception e) {
+                e.printStackTrace();
+             }
+        }
+    }
 
         @Override
         public void onCancel() {
@@ -151,6 +157,7 @@ public class LoginActivityFragment extends Fragment {
 
         accessTokenTracker.startTracking();
         profileTracker.startTracking();
+        bd = new BD(getActivity());
     }
 
     @Override
